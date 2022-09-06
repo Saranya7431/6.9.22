@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+void towers(int,char,char,char,char);
+int main() {
+int num;
+    printf("Enter number of disks");
+    scanf("%d",&num);
+    printf("The sequence of moves involved in the tower of hanoi are:");
+    towers(num,'A','B','C')
+        if(num==1)
+        {
+            printf("Move disk 1 from peg %c to peg %c ",source,target);
+            return;
+        }
+    towers(num-1,source,temp,target);
+    printf("Move disk %d from peg %c to peg %c",towers(num-1,temp,target,source));
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
